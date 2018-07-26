@@ -112,5 +112,8 @@
   <ItemGroup>
     <None Include="Resources\if_hamburger_1954554.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_link_1954525.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

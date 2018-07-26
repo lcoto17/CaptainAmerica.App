@@ -93,6 +93,16 @@ namespace CaptainAmerica.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_link_1954525 {
+            get {
+                object obj = ResourceManager.GetObject("if_link_1954525", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_maximize_1954538 {
             get {
                 object obj = ResourceManager.GetObject("if_maximize_1954538", resourceCulture);
