@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CaptainAmerica.BL.Implementations;
+using CaptainAmerica.Model;
 
 namespace CaptainAmerica.App
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        private BLProyecto oPoryectoBL = new BLProyecto();
+
+        public frmMain()
         {
             InitializeComponent();
         }
+
     }
 }

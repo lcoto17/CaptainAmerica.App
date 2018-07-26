@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CaptainAmerica.Model
 {
-    public class ProyectoArchivo
+    public class ProyectoArchivo : Base
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

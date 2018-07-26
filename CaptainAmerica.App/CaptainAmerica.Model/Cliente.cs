@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CaptainAmerica.Model
 {
-    public class Cliente
+    public class Cliente : Base
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

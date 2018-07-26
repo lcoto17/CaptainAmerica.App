@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CaptainAmerica.Model
 {
-    public class Proyecto
+    public class Proyecto : Base
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

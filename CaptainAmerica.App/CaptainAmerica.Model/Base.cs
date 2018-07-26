@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CaptainAmerica.BL
+namespace CaptainAmerica.Model
 {
-    public class Class1
+    public abstract class Base
     {
     }
 }
