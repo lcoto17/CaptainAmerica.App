@@ -231,11 +231,11 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::CaptainAmerica.App.Properties.Resources.menuProjectico1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(2, 125);
+            this.button1.Location = new System.Drawing.Point(1, 125);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(274, 48);
             this.button1.TabIndex = 0;
-            this.button1.Text = "      Control de proyectos";
+            this.button1.Text = "       Control de proyectos";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1

@@ -74,6 +74,8 @@ namespace CaptainAmerica.App
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+            btnRestore.Visible = false;
+            btnMaximize.Visible = true;
         }
     }
 }
