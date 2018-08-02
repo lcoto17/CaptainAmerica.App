@@ -73,6 +73,16 @@ namespace CaptainAmerica.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_Configuration_01_1976051 {
+            get {
+                object obj = ResourceManager.GetObject("if_Configuration-01_1976051", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_cross_1894663 {
             get {
                 object obj = ResourceManager.GetObject("if_cross_1894663", resourceCulture);
@@ -113,9 +123,89 @@ namespace CaptainAmerica.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_maximize_19545381 {
+            get {
+                object obj = ResourceManager.GetObject("if_maximize_19545381", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_menu_alt_134216 {
+            get {
+                object obj = ResourceManager.GetObject("if_menu-alt_134216", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_minus_1954540 {
             get {
                 object obj = ResourceManager.GetObject("if_minus_1954540", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_user_1370025 {
+            get {
+                object obj = ResourceManager.GetObject("if_user_1370025", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_user_male2_172626 {
+            get {
+                object obj = ResourceManager.GetObject("if_user_male2_172626", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JJLogo {
+            get {
+                object obj = ResourceManager.GetObject("JJLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menuProjectico {
+            get {
+                object obj = ResourceManager.GetObject("menuProjectico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menuProjectico1 {
+            get {
+                object obj = ResourceManager.GetObject("menuProjectico1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menuProjectico2 {
+            get {
+                object obj = ResourceManager.GetObject("menuProjectico2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CaptainAmerica.BL.Implementations;
 using CaptainAmerica.Model;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
 
 namespace CaptainAmerica.App
 {
@@ -19,6 +21,7 @@ namespace CaptainAmerica.App
         public frmMain()
         {
             InitializeComponent();
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -44,6 +47,33 @@ namespace CaptainAmerica.App
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = false;
+            this.AutoScaleMode = AutoScaleMode.Font;
+            btnUserDetail.Text = WindowsIdentity.GetCurrent().Name;
+        }
+
+        private void btnCollapse_Click(object sender, EventArgs e)
+        {
+            if(pnlVerticalMenu.Width == 63) pnlVerticalMenu.Width = 275;
+            else pnlVerticalMenu.Width = 63;
+
+        }
+
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+        private void pnlTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
