@@ -73,6 +73,36 @@ namespace CaptainAmerica.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_15_Pencil_290135 {
+            get {
+                object obj = ResourceManager.GetObject("if_15.Pencil_290135", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Artboard_19_3030708 {
+            get {
+                object obj = ResourceManager.GetObject("if_Artboard_19_3030708", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Close_1031533 {
+            get {
+                object obj = ResourceManager.GetObject("if_Close_1031533", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Configuration_01_1976051 {
             get {
                 object obj = ResourceManager.GetObject("if_Configuration-01_1976051", resourceCulture);
@@ -83,9 +113,69 @@ namespace CaptainAmerica.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_Copcopan_3428076 {
+            get {
+                object obj = ResourceManager.GetObject("if_Copcopan_3428076", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_cross_1894663 {
             get {
                 object obj = ResourceManager.GetObject("if_cross_1894663", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_eye_preview_see_seen_view_392505 {
+            get {
+                object obj = ResourceManager.GetObject("if_eye_preview_see_seen_view_392505", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_free_17_463011 {
+            get {
+                object obj = ResourceManager.GetObject("if_free-17_463011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_free_20_463008 {
+            get {
+                object obj = ResourceManager.GetObject("if_free-20_463008", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_free_calendar {
+            get {
+                object obj = ResourceManager.GetObject("if_free-calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_free_client {
+            get {
+                object obj = ResourceManager.GetObject("if_free-client", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +236,46 @@ namespace CaptainAmerica.App.Properties {
         internal static System.Drawing.Bitmap if_minus_1954540 {
             get {
                 object obj = ResourceManager.GetObject("if_minus_1954540", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_miscellaneous_48_809421 {
+            get {
+                object obj = ResourceManager.GetObject("if_miscellaneous-48_809421", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_plus_24_103172 {
+            get {
+                object obj = ResourceManager.GetObject("if_plus-24_103172", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_plus_24_1031721 {
+            get {
+                object obj = ResourceManager.GetObject("if_plus-24_1031721", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_search_80px_510919 {
+            get {
+                object obj = ResourceManager.GetObject("if_search-80px_510919", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

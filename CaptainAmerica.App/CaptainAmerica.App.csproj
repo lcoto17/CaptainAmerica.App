@@ -52,11 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controls\CtrlProjectCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CtrlProjectCard.Designer.cs">
+      <DependentUpon>CtrlProjectCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmProjectCreate.Designer.cs">
+      <DependentUpon>frmProjectCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectList.Designer.cs">
+      <DependentUpon>frmProjectList.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -66,8 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\CtrlProjectCard.resx">
+      <DependentUpon>CtrlProjectCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectCreate.resx">
+      <DependentUpon>frmProjectCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectList.resx">
+      <DependentUpon>frmProjectList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -156,6 +174,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_user_male2_172626.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_plus-24_103172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_free-17_463011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_free-20_463008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Copcopan_3428076.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_miscellaneous-48_809421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search-80px_510919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_free-client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_free-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_eye_preview_see_seen_view_392505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Artboard_19_3030708.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Close_1031533.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_15.Pencil_290135.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

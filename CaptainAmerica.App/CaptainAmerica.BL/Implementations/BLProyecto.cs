@@ -69,7 +69,7 @@ namespace CaptainAmerica.BL.Implementations
             {
                 using (JJ_CPD dbContext = new JJ_CPD())
                 {
-                    return dbContext.dbProyecto.ToList();
+                    return dbContext.dbProyecto.Include("Cliente").Include("ProyectoCategoria").ToList();
                 }
             }
             catch (Exception)

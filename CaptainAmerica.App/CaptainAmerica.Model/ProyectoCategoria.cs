@@ -16,5 +16,6 @@ namespace CaptainAmerica.Model
         public string NombreCategoriaProyecto { get; set; }
         [StringLength(255)]
         public string DescrCategoriaProyecto { get; set; }
+        public virtual ICollection<Proyecto> Proyecto { get; set; }
     }
 }
