@@ -16,7 +16,7 @@ namespace CaptainAmerica.App
     public partial class frmProjectList : Form
     {
         private BLProyecto _oBLProyecto = new BLProyecto();
-
+        private BLProyectoMiembro _oBLProyectoMiembro = new BLProyectoMiembro();
         public frmProjectList()
         {
             InitializeComponent();
@@ -47,15 +47,15 @@ namespace CaptainAmerica.App
 
         public void fnLoadProjects()
         {
-            var projectList = _oBLProyecto.GetAll();
+            var projectList = _oBLProyectoMiembro.GetAll();
 
             flpnlProjectList.Controls.Clear();
                         
             foreach (var item in projectList)
             {
-                CtrlProjectCard _oCtrlProject = new CtrlProjectCard(item.NombreProyecto,
-                item.Cliente.NombreCliente, item.ProyectoCategoria.NombreCategoriaProyecto, item.FechaCreacion, 0);
-                _oCtrlProject.Tag = item;
+                CtrlProjectCard _oCtrlProject = new CtrlProjectCard(item.Proyecto.NombreProyecto,
+                item.Proyecto.Cliente.NombreCliente, item.Proyecto.ProyectoCategoria.NombreCategoriaProyecto, item.Proyecto.FechaCreacion, 0, item.MiembroPermiso);
+                _oCtrlProject.Tag = item.Proyecto;
                 flpnlProjectList.Controls.Add(_oCtrlProject);
             }
         }

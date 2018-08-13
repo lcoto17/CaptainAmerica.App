@@ -17,7 +17,9 @@ namespace CaptainAmerica.Model
         [StringLength(75)]
         public string NombreUsuario{ get; set; }
         public DateTime FechaCreacion { get; set; }
+        public int IdRol { get; set; }
 
+        [ForeignKey("IdRol")]
         public Rol Rol { get; set; }
 
     }

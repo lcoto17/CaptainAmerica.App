@@ -14,8 +14,12 @@ namespace CaptainAmerica.Model
         public int IdProyectoMiembro { get; set; }
         [StringLength(1)]
         public string MiembroPermiso { get; set; }
+        public int IdProyecto { get; set; }
+        public int IdUsuario { get; set; }
 
+        [ForeignKey("IdProyecto")]
         public Proyecto Proyecto { get; set; }
+        [ForeignKey("IdUsuario")]
         public Usuario Usuario { get; set; }
     }
 }

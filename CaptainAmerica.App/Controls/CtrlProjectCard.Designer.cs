@@ -31,10 +31,9 @@
             this.lblProject = new System.Windows.Forms.Label();
             this.lblClient = new System.Windows.Forms.Label();
             this.lblProjectCreateDate = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDetails = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.btnMembers = new System.Windows.Forms.Button();
             this.imgMecanic = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -78,38 +77,21 @@
             this.lblProjectCreateDate.Text = "[CreateDate]";
             this.lblProjectCreateDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button2
+            // btnDetails
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(78, 189);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 29);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Detalles";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(262, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 29);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDetails.BackColor = System.Drawing.Color.Teal;
+            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetails.FlatAppearance.BorderSize = 0;
+            this.btnDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetails.ForeColor = System.Drawing.Color.White;
+            this.btnDetails.Location = new System.Drawing.Point(78, 189);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(80, 29);
+            this.btnDetails.TabIndex = 12;
+            this.btnDetails.Text = "Detalles";
+            this.btnDetails.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -121,22 +103,22 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // btnDetails
+            // btnEdit
             // 
-            this.btnDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDetails.FlatAppearance.BorderSize = 0;
-            this.btnDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetails.ForeColor = System.Drawing.Color.White;
-            this.btnDetails.Location = new System.Drawing.Point(5, 189);
-            this.btnDetails.Name = "btnDetails";
-            this.btnDetails.Size = new System.Drawing.Size(67, 29);
-            this.btnDetails.TabIndex = 9;
-            this.btnDetails.Text = "Editar";
-            this.btnDetails.UseVisualStyleBackColor = false;
-            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(5, 189);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(67, 29);
+            this.btnEdit.TabIndex = 9;
+            this.btnEdit.Text = "Editar";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // btnMembers
             // 
@@ -195,10 +177,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDetails);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnMembers);
             this.Controls.Add(this.imgMecanic);
             this.Controls.Add(this.lblProjectCreateDate);
@@ -226,9 +207,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox imgMecanic;
         private System.Windows.Forms.Button btnMembers;
-        private System.Windows.Forms.Button btnDetails;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDetails;
     }
 }

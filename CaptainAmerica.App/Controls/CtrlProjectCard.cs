@@ -17,7 +17,7 @@ namespace CaptainAmerica.App.Controls
             InitializeComponent();
         }
 
-        public CtrlProjectCard(string projectName, string clientName, string projectCategory, DateTime projectCreateDate, int id )
+        public CtrlProjectCard(string projectName, string clientName, string projectCategory, DateTime projectCreateDate, int id, string permission)
         {
             InitializeComponent();
 
@@ -27,6 +27,29 @@ namespace CaptainAmerica.App.Controls
             this.Tag = id;
             imgElectric.Visible = projectCategory == "Eléctrico";
             imgMecanic.Visible = projectCategory == "Mecánico";
+
+            switch (permission)
+            {
+                case "F":
+                    btnEdit.Enabled = true;
+                    btnDetails.Enabled = true;
+                    btnMembers.Enabled = true;
+                    break;
+                case "R":
+                    btnEdit.Enabled = false;
+                    btnDetails.Enabled = true;
+                    btnMembers.Enabled = false;
+                    break;
+                case "E":
+                    btnEdit.Enabled = true;
+                    btnDetails.Enabled = true;
+                    btnMembers.Enabled = false;
+                    break;
+                default:
+                    break;
+            }
+
+
         }
 
         private void btnDetails_Click(object sender, EventArgs e)

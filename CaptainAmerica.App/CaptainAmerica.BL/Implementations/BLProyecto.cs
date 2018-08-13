@@ -4,6 +4,7 @@ using CaptainAmerica.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,9 +18,21 @@ namespace CaptainAmerica.BL.Implementations
         {
             try
             {
+                BLProyectoMiembro otempPM = new BLProyectoMiembro();
+                BLUsuario oTempU = new BLUsuario();
+                ProyectoMiembro opromie = new ProyectoMiembro();
+
                 using (JJ_CPD dbContext = new JJ_CPD())
                 {
                     dbContext.dbProyecto.Add(oTemp);
+                    dbContext.SaveChanges();
+
+                    opromie.IdProyecto = oTemp.IdProyecto;
+                    opromie.IdUsuario = oTempU.GetAll().Where(c => c.CodigoUsuario.ToLower() == WindowsIdentity.GetCurrent().Name.ToLower()).FirstOrDefault().IdUsuario;
+                    opromie.MiembroPermiso = "F";
+
+
+                    otempPM.AddNew(opromie);
                     dbContext.SaveChanges();
                 }
             }
@@ -69,7 +82,13 @@ namespace CaptainAmerica.BL.Implementations
             {
                 using (JJ_CPD dbContext = new JJ_CPD())
                 {
-                    return dbContext.dbProyecto.Include("Cliente").Include("ProyectoCategoria").ToList();
+                    BLProyectoMiembro pm = new BLProyectoMiembro();
+                    var temp = pm.GetAll()
+                        .Where(c => c.Usuario.CodigoUsuario.ToLower() == WindowsIdentity.GetCurrent().Name.ToLower())
+                        .Select(c => c.IdProyecto).ToList();
+
+                    return dbContext.dbProyecto.Include("Cliente").Include("ProyectoCategoria").
+                        Where(c=> temp.Contains(c.IdProyecto)).ToList();
                 }
             }
             catch (Exception)
