@@ -51,8 +51,8 @@ namespace CaptainAmerica.BL.Implementations
                     else
                     {
                         Temp.NombreProyecto = oTemp.NombreProyecto;
-                        Temp.ProyectoCategoria = oTemp.ProyectoCategoria;
-                        Temp.Cliente = oTemp.Cliente;
+                        Temp.IdCategoriaProyecto = oTemp.IdCategoriaProyecto;
+                        Temp.IdCliente = oTemp.IdCliente;
                         dbContext.SaveChanges();
                     }
                 }
@@ -84,7 +84,7 @@ namespace CaptainAmerica.BL.Implementations
             {
                 using (JJ_CPD dbContext = new JJ_CPD())
                 {
-                    return dbContext.dbProyecto.Where(c => c.IdProyecto == id).FirstOrDefault();
+                    return dbContext.dbProyecto.Include("Cliente").Include("ProyectoCategoria").Where(c => c.IdProyecto == id).FirstOrDefault();
                 }
             }
             catch (Exception)

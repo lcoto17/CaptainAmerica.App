@@ -15,8 +15,12 @@ namespace CaptainAmerica.Model
         [StringLength(75)]
         public string NombreProyecto { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public int IdCliente { get; set; }
+        public int IdCategoriaProyecto { get; set; }
 
+        [ForeignKey("IdCliente")]
         public Cliente Cliente { get; set; }
+        [ForeignKey("IdCategoriaProyecto")]
         public ProyectoCategoria ProyectoCategoria { get; set; }
     }
 }

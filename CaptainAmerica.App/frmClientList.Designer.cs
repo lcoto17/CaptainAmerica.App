@@ -1,6 +1,6 @@
 ﻿namespace CaptainAmerica.App
 {
-    partial class frmProjectList
+    partial class frmClientList
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.pnlTopBar = new System.Windows.Forms.Panel();
+            this.btnTopAddNew = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.flpnlProjectList = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpnlClientList = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlMessage = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBottomAddNew = new System.Windows.Forms.Button();
-            this.btnTopAddNew = new System.Windows.Forms.Button();
             this.pnlTopBar.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.pnlMessage.SuspendLayout();
@@ -56,20 +56,40 @@
             this.pnlTopBar.Size = new System.Drawing.Size(660, 100);
             this.pnlTopBar.TabIndex = 0;
             // 
+            // btnTopAddNew
+            // 
+            this.btnTopAddNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTopAddNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnTopAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTopAddNew.FlatAppearance.BorderSize = 0;
+            this.btnTopAddNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnTopAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTopAddNew.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTopAddNew.ForeColor = System.Drawing.Color.White;
+            this.btnTopAddNew.Image = global::CaptainAmerica.App.Properties.Resources.if_plus_24_103172;
+            this.btnTopAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTopAddNew.Location = new System.Drawing.Point(444, 37);
+            this.btnTopAddNew.Name = "btnTopAddNew";
+            this.btnTopAddNew.Size = new System.Drawing.Size(180, 38);
+            this.btnTopAddNew.TabIndex = 8;
+            this.btnTopAddNew.Text = "    Agregar cliente";
+            this.btnTopAddNew.UseVisualStyleBackColor = false;
+            this.btnTopAddNew.Click += new System.EventHandler(this.btnTopAddNew_Click);
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(12, 24);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(373, 51);
+            this.lblTitle.Size = new System.Drawing.Size(336, 51);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Control de proyectos";
+            this.lblTitle.Text = "Control de clientes";
             // 
             // pnlContainer
             // 
             this.pnlContainer.BackColor = System.Drawing.Color.White;
-            this.pnlContainer.Controls.Add(this.flpnlProjectList);
+            this.pnlContainer.Controls.Add(this.flpnlClientList);
             this.pnlContainer.Controls.Add(this.pnlMessage);
             this.pnlContainer.Controls.Add(this.panel2);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -78,15 +98,15 @@
             this.pnlContainer.Size = new System.Drawing.Size(660, 487);
             this.pnlContainer.TabIndex = 1;
             // 
-            // flpnlProjectList
+            // flpnlClientList
             // 
-            this.flpnlProjectList.AutoScroll = true;
-            this.flpnlProjectList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpnlProjectList.Location = new System.Drawing.Point(0, 0);
-            this.flpnlProjectList.Name = "flpnlProjectList";
-            this.flpnlProjectList.Padding = new System.Windows.Forms.Padding(25, 50, 25, 0);
-            this.flpnlProjectList.Size = new System.Drawing.Size(660, 425);
-            this.flpnlProjectList.TabIndex = 4;
+            this.flpnlClientList.AutoScroll = true;
+            this.flpnlClientList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpnlClientList.Location = new System.Drawing.Point(0, 0);
+            this.flpnlClientList.Name = "flpnlClientList";
+            this.flpnlClientList.Padding = new System.Windows.Forms.Padding(25, 50, 25, 0);
+            this.flpnlClientList.Size = new System.Drawing.Size(660, 425);
+            this.flpnlClientList.TabIndex = 4;
             // 
             // pnlMessage
             // 
@@ -111,7 +131,6 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 1;
             this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblMessage
             // 
@@ -150,31 +169,11 @@
             this.btnBottomAddNew.Name = "btnBottomAddNew";
             this.btnBottomAddNew.Size = new System.Drawing.Size(180, 38);
             this.btnBottomAddNew.TabIndex = 7;
-            this.btnBottomAddNew.Text = "    Agregar proyecto";
+            this.btnBottomAddNew.Text = "    Agregar cliente";
             this.btnBottomAddNew.UseVisualStyleBackColor = false;
             this.btnBottomAddNew.Click += new System.EventHandler(this.btnBottomAddNew_Click);
             // 
-            // btnTopAddNew
-            // 
-            this.btnTopAddNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTopAddNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnTopAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTopAddNew.FlatAppearance.BorderSize = 0;
-            this.btnTopAddNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnTopAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTopAddNew.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTopAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnTopAddNew.Image = global::CaptainAmerica.App.Properties.Resources.if_plus_24_103172;
-            this.btnTopAddNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTopAddNew.Location = new System.Drawing.Point(444, 37);
-            this.btnTopAddNew.Name = "btnTopAddNew";
-            this.btnTopAddNew.Size = new System.Drawing.Size(180, 38);
-            this.btnTopAddNew.TabIndex = 8;
-            this.btnTopAddNew.Text = "    Agregar proyecto";
-            this.btnTopAddNew.UseVisualStyleBackColor = false;
-            this.btnTopAddNew.Click += new System.EventHandler(this.btnTopAddNew_Click);
-            // 
-            // frmProjectList
+            // frmClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +182,7 @@
             this.Controls.Add(this.pnlTopBar);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmProjectList";
+            this.Name = "frmClientList";
             this.Text = "Control de proyectos";
             this.Load += new System.EventHandler(this.frmListProjects_Load);
             this.pnlTopBar.ResumeLayout(false);
@@ -206,7 +205,7 @@
         private System.Windows.Forms.Button btnBottomAddNew;
         private System.Windows.Forms.Panel pnlMessage;
         private System.Windows.Forms.Label lblMessage;
-        private System.Windows.Forms.FlowLayoutPanel flpnlProjectList;
+        private System.Windows.Forms.FlowLayoutPanel flpnlClientList;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Button btnTopAddNew;
     }

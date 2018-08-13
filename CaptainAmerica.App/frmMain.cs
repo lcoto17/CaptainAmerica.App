@@ -101,5 +101,10 @@ namespace CaptainAmerica.App
         {
             fnInitializeChildForms(new frmProjectList());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fnInitializeChildForms(new frmClientList());
+        }
     }
 }

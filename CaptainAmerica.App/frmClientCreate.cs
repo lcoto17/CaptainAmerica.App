@@ -13,35 +13,28 @@ using CaptainAmerica.Model;
 
 namespace CaptainAmerica.App
 {
-    public partial class frmProjectCreate : Form
+    public partial class frmClientCreate : Form
     {
         private bool isUpdate { get; set; }
-        private int IdProyecto { get; set; }
-        public Proyecto UpdatedProyecto { get; set; }
+        private int IdCliente { get; set; }
+        public Cliente UpdatedCliente { get; set; }
 
         private BLCategoriaProyecto _oBLCategoriaPro;
         private BLCliente _oBLCliente;
         private BLProyecto _oBLProyecto; 
 
-        public frmProjectCreate()
+        public frmClientCreate()
         {
             InitializeComponent();
             //Calling bind method to fill combo boxes
-            fnBindListSources();
-
             isUpdate = false;
         }
-        public frmProjectCreate(Proyecto tempProyecto)
+        public frmClientCreate(Cliente tempCliente)
         {
             InitializeComponent();
             //Calling bind method to fill combo boxes
-            fnBindListSources();
-            IdProyecto = tempProyecto.IdProyecto;
-            txtProjectName.Text = tempProyecto.NombreProyecto;
-            dtpProjectDate.Value = tempProyecto.FechaCreacion;
-            cboxProjectCategory.SelectedValue = tempProyecto.ProyectoCategoria.IdCategoriaProyecto;
-            cboxProjectClient.SelectedValue = tempProyecto.Cliente.IdCliente;
-            dtpProjectDate.Enabled = false;
+            IdCliente = tempCliente.IdCliente;
+            txtClientName.Text = tempCliente.NombreCliente;
             isUpdate = true;
         }
 
@@ -87,42 +80,23 @@ namespace CaptainAmerica.App
         #endregion
 
         #region Private Methods
-        private void fnBindListSources()
+        private void fnSaveClient(string name)
         {
-            //Loading project categories
-            cboxProjectCategory.Items.Clear();
-            _oBLCategoriaPro = new BLCategoriaProyecto();
-            cboxProjectCategory.ValueMember = "IdCategoriaProyecto";
-            cboxProjectCategory.DisplayMember = "NombreCategoriaProyecto";
-            cboxProjectCategory.DataSource = _oBLCategoriaPro.GetAll();
-
-            //Loading clients
-            cboxProjectClient.Items.Clear();
             _oBLCliente = new BLCliente();
-            cboxProjectClient.ValueMember = "IdCliente";
-            cboxProjectClient.DisplayMember = "NombreCliente";
-            cboxProjectClient.DataSource = _oBLCliente.GetAll().OrderBy(c => c.NombreCliente).ToList();
-        }
-        private void fnSaveProject(string name, int category, DateTime createDate, int client)
-        {
-            _oBLProyecto = new BLProyecto();
-            Proyecto oProj = new Proyecto();
+            Cliente oCliente = new Cliente();
 
-            oProj.NombreProyecto = name;
-            oProj.IdCategoriaProyecto = category;
-            oProj.FechaCreacion = createDate;
-            oProj.IdCliente = client;
-
+            oCliente.NombreCliente = name;
+            oCliente.FechaCreacion = DateTime.Now;
             //Calling bl method for saving in database (Edit or new)
             if(isUpdate)
             {
-                oProj.IdProyecto = this.IdProyecto;
-                _oBLProyecto.Edit(oProj);
-                UpdatedProyecto = _oBLProyecto.GetOne(this.IdProyecto);
+                oCliente.IdCliente = this.IdCliente;
+                _oBLCliente.Edit(oCliente);
+                UpdatedCliente = _oBLCliente.GetOne(this.IdCliente);
             }
             else
             {
-                _oBLProyecto.AddNew(oProj);
+                _oBLCliente.AddNew(oCliente);
             }
 
             
@@ -133,8 +107,8 @@ namespace CaptainAmerica.App
         {
             try
             {
-                fnSaveProject(txtProjectName.Text, (int)cboxProjectCategory.SelectedValue, dtpProjectDate.Value, (int)cboxProjectClient.SelectedValue);
-                MessageBox.Show("El proyecto se guardó correctamente.", "J&J Electromecánica - Aplicación",
+                fnSaveClient(txtClientName.Text);
+                MessageBox.Show("El cliente se guardó correctamente.", "J&J Electromecánica - Aplicación",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.DialogResult = DialogResult.OK;

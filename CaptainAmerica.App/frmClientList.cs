@@ -13,11 +13,11 @@ using CaptainAmerica.Model;
 
 namespace CaptainAmerica.App
 {
-    public partial class frmProjectList : Form
+    public partial class frmClientList : Form
     {
-        private BLProyecto _oBLProyecto = new BLProyecto();
+        private BLCliente _oBLCliente = new BLCliente();
 
-        public frmProjectList()
+        public frmClientList()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace CaptainAmerica.App
         {
             try
             {
-                fnLoadProjects();
+                fnLoadClients();
             }
             catch (Exception)
             {
@@ -45,37 +45,31 @@ namespace CaptainAmerica.App
             fnInitializeCreateForm();
         }
 
-        public void fnLoadProjects()
+        public void fnLoadClients()
         {
-            var projectList = _oBLProyecto.GetAll();
+            var clientList = _oBLCliente.GetAll();
 
-            flpnlProjectList.Controls.Clear();
+            flpnlClientList.Controls.Clear();
                         
-            foreach (var item in projectList)
+            foreach (var item in clientList)
             {
-                CtrlProjectCard _oCtrlProject = new CtrlProjectCard(item.NombreProyecto,
-                item.Cliente.NombreCliente, item.ProyectoCategoria.NombreCategoriaProyecto, item.FechaCreacion, 0);
-                _oCtrlProject.Tag = item;
-                flpnlProjectList.Controls.Add(_oCtrlProject);
+                CtrlClientCard _oCtrlClient = new CtrlClientCard(item.NombreCliente, item.FechaCreacion, item.IdCliente);
+                _oCtrlClient.Tag = item;
+                flpnlClientList.Controls.Add(_oCtrlClient);
             }
         }
 
         private void fnInitializeCreateForm()
         {
-            frmProjectCreate _oform = new frmProjectCreate();
+            frmClientCreate _oform = new frmClientCreate();
             var result = _oform.ShowDialog();
 
             //Adding new project to UI with out refresh from database - Better performance
             if(result == DialogResult.OK)
             {
-                fnLoadProjects();
+                fnLoadClients();
             }
 
-        }
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            pnlMessage.Height = 0;
-            lblMessage.Text = "El proyecto '{0}' se ha {1} correctamente.";
         }
     }
 }

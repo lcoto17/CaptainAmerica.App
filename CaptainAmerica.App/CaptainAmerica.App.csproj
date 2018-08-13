@@ -52,17 +52,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CtrlClientCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CtrlClientCard.Designer.cs">
+      <DependentUpon>CtrlClientCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\CtrlProjectCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\CtrlProjectCard.Designer.cs">
       <DependentUpon>CtrlProjectCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmClientCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientCreate.Designer.cs">
+      <DependentUpon>frmClientCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProjectCreate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProjectCreate.Designer.cs">
       <DependentUpon>frmProjectCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientList.Designer.cs">
+      <DependentUpon>frmClientList.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProjectList.cs">
       <SubType>Form</SubType>
@@ -78,11 +96,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\CtrlClientCard.resx">
+      <DependentUpon>CtrlClientCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\CtrlProjectCard.resx">
       <DependentUpon>CtrlProjectCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClientCreate.resx">
+      <DependentUpon>frmClientCreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProjectCreate.resx">
       <DependentUpon>frmProjectCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientList.resx">
+      <DependentUpon>frmClientList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProjectList.resx">
       <DependentUpon>frmProjectList.cs</DependentUpon>

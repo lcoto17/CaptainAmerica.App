@@ -136,6 +136,7 @@
             this.btnDetails.TabIndex = 9;
             this.btnDetails.Text = "Editar";
             this.btnDetails.UseVisualStyleBackColor = false;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // btnMembers
             // 

@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlVerticalMenu = new System.Windows.Forms.Panel();
+            this.btnUserDetail = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnPrjectManagement = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pnlMainContainer = new System.Windows.Forms.Panel();
             this.btnRestore = new System.Windows.Forms.PictureBox();
             this.btnCollapse = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnMaximize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.btnUserDetail = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnPrjectManagement = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMainContainer = new System.Windows.Forms.Panel();
             this.pnlVerticalMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCollapse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlVerticalMenu
@@ -68,6 +68,78 @@
             this.pnlVerticalMenu.Size = new System.Drawing.Size(63, 731);
             this.pnlVerticalMenu.TabIndex = 0;
             // 
+            // btnUserDetail
+            // 
+            this.btnUserDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUserDetail.AutoEllipsis = true;
+            this.btnUserDetail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUserDetail.FlatAppearance.BorderSize = 0;
+            this.btnUserDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnUserDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserDetail.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserDetail.ForeColor = System.Drawing.Color.White;
+            this.btnUserDetail.Image = global::CaptainAmerica.App.Properties.Resources.if_user_male2_172626;
+            this.btnUserDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUserDetail.Location = new System.Drawing.Point(0, 683);
+            this.btnUserDetail.Name = "btnUserDetail";
+            this.btnUserDetail.Size = new System.Drawing.Size(274, 48);
+            this.btnUserDetail.TabIndex = 7;
+            this.btnUserDetail.Text = "    ";
+            this.btnUserDetail.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 233);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(274, 48);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "    Ajustes de sistema";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 179);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(274, 48);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "    Control de clientes";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnPrjectManagement
+            // 
+            this.btnPrjectManagement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrjectManagement.FlatAppearance.BorderSize = 0;
+            this.btnPrjectManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPrjectManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrjectManagement.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrjectManagement.ForeColor = System.Drawing.Color.White;
+            this.btnPrjectManagement.Image = global::CaptainAmerica.App.Properties.Resources.menuProjectico1;
+            this.btnPrjectManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrjectManagement.Location = new System.Drawing.Point(0, 125);
+            this.btnPrjectManagement.Name = "btnPrjectManagement";
+            this.btnPrjectManagement.Size = new System.Drawing.Size(274, 48);
+            this.btnPrjectManagement.TabIndex = 0;
+            this.btnPrjectManagement.Text = "       Control de proyectos";
+            this.btnPrjectManagement.UseVisualStyleBackColor = true;
+            this.btnPrjectManagement.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -78,6 +150,17 @@
             this.label1.Size = new System.Drawing.Size(193, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "J&&J Electromecánica";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::CaptainAmerica.App.Properties.Resources.JJLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // pnlTop
             // 
@@ -93,15 +176,6 @@
             this.pnlTop.Size = new System.Drawing.Size(941, 48);
             this.pnlTop.TabIndex = 1;
             this.pnlTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseDown);
-            // 
-            // pnlMainContainer
-            // 
-            this.pnlMainContainer.BackColor = System.Drawing.Color.White;
-            this.pnlMainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainContainer.Location = new System.Drawing.Point(63, 48);
-            this.pnlMainContainer.Name = "pnlMainContainer";
-            this.pnlMainContainer.Size = new System.Drawing.Size(941, 683);
-            this.pnlMainContainer.TabIndex = 2;
             // 
             // btnRestore
             // 
@@ -168,87 +242,14 @@
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnUserDetail
+            // pnlMainContainer
             // 
-            this.btnUserDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUserDetail.AutoEllipsis = true;
-            this.btnUserDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUserDetail.FlatAppearance.BorderSize = 0;
-            this.btnUserDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnUserDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserDetail.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUserDetail.ForeColor = System.Drawing.Color.White;
-            this.btnUserDetail.Image = global::CaptainAmerica.App.Properties.Resources.if_user_male2_172626;
-            this.btnUserDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUserDetail.Location = new System.Drawing.Point(0, 683);
-            this.btnUserDetail.Name = "btnUserDetail";
-            this.btnUserDetail.Size = new System.Drawing.Size(274, 48);
-            this.btnUserDetail.TabIndex = 7;
-            this.btnUserDetail.Text = "    ";
-            this.btnUserDetail.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 233);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(274, 48);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "    Ajustes de sistema";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(274, 48);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "    Control de clientes";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnPrjectManagement
-            // 
-            this.btnPrjectManagement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrjectManagement.FlatAppearance.BorderSize = 0;
-            this.btnPrjectManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnPrjectManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrjectManagement.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrjectManagement.ForeColor = System.Drawing.Color.White;
-            this.btnPrjectManagement.Image = global::CaptainAmerica.App.Properties.Resources.menuProjectico1;
-            this.btnPrjectManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrjectManagement.Location = new System.Drawing.Point(1, 125);
-            this.btnPrjectManagement.Name = "btnPrjectManagement";
-            this.btnPrjectManagement.Size = new System.Drawing.Size(274, 48);
-            this.btnPrjectManagement.TabIndex = 0;
-            this.btnPrjectManagement.Text = "       Control de proyectos";
-            this.btnPrjectManagement.UseVisualStyleBackColor = true;
-            this.btnPrjectManagement.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::CaptainAmerica.App.Properties.Resources.JJLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pnlMainContainer.BackColor = System.Drawing.Color.White;
+            this.pnlMainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainContainer.Location = new System.Drawing.Point(63, 48);
+            this.pnlMainContainer.Name = "pnlMainContainer";
+            this.pnlMainContainer.Size = new System.Drawing.Size(941, 683);
+            this.pnlMainContainer.TabIndex = 2;
             // 
             // frmMain
             // 
@@ -264,13 +265,13 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlVerticalMenu.ResumeLayout(false);
             this.pnlVerticalMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCollapse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -16,5 +16,6 @@ namespace CaptainAmerica.Model
         [StringLength(75)]
         public string NombreCliente { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public virtual ICollection<Proyecto> Proyecto { get; set; }
     }
 }
