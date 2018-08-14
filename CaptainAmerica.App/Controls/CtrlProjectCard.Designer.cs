@@ -92,6 +92,7 @@
             this.btnDetails.TabIndex = 12;
             this.btnDetails.Text = "Detalles";
             this.btnDetails.UseVisualStyleBackColor = false;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click_1);
             // 
             // pictureBox1
             // 

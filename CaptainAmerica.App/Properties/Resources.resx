@@ -121,6 +121,9 @@
   <data name="if_user_1370025" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_user_1370025.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_menu-alt_134216" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_menu-alt_1342161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,20 +151,14 @@
   <data name="JJLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JJLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_hamburger_1954554" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_hamburger_1954554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_free-client" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_free-client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="menuProjectico1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menuProjectico1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_free-17_463011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_free-17_463011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_Copcopan_3428076" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_Copcopan_3428076.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_free-client" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_free-client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menuProjectico2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menuProjectico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +178,26 @@
   <data name="if_maximize_1954538" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_maximize_1954538.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (4)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Copcopan_3428076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Copcopan_3428076.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menuProjectico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menuProjectico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_15.Pencil_290135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_15.Pencil_290135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_minus_1954540" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_minus_1954540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,13 +208,22 @@
   <data name="if_Artboard_19_3030708" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_Artboard_19_3030708.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electricity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_eye_preview_see_seen_view_392505" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_eye_preview_see_seen_view_392505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_maximize_19545381" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_maximize_19545381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_15.Pencil_290135" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_15.Pencil_290135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_hamburger_1954554" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_hamburger_1954554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

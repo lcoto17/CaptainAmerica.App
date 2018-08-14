@@ -12,12 +12,14 @@ namespace CaptainAmerica.App.Controls
 {
     public partial class CtrlProjectCard : UserControl
     {
+        private frmMain MyGrandFather { get; set; }
         public CtrlProjectCard()
         {
             InitializeComponent();
         }
 
-        public CtrlProjectCard(string projectName, string clientName, string projectCategory, DateTime projectCreateDate, int id, string permission)
+        public CtrlProjectCard(string projectName, string clientName, string projectCategory, DateTime projectCreateDate,
+            int id, string permission, frmMain MainParent)
         {
             InitializeComponent();
 
@@ -49,6 +51,7 @@ namespace CaptainAmerica.App.Controls
                     break;
             }
 
+            MyGrandFather = MainParent;
 
         }
 
@@ -82,6 +85,11 @@ namespace CaptainAmerica.App.Controls
             if (result == DialogResult.OK)
             {
             }
+        }
+
+        private void btnDetails_Click_1(object sender, EventArgs e)
+        {
+            this.MyGrandFather.fnDetailsProject();
         }
     }
 }

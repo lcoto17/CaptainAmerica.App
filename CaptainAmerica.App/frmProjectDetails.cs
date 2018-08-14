@@ -14,16 +14,13 @@ using System.Security.Principal;
 
 namespace CaptainAmerica.App
 {
-    public partial class frmProjectList : Form
+    public partial class frmProjectDetails : Form
     {
         private BLProyecto _oBLProyecto = new BLProyecto();
         private BLProyectoMiembro _oBLProyectoMiembro = new BLProyectoMiembro();
-
-        public frmMain MyParent { get; set; }
-        public frmProjectList(frmMain Parent)
+        public frmProjectDetails()
         {
             InitializeComponent();
-            MyParent = Parent;
         }
 
         private void frmListProjects_Load(object sender, EventArgs e)
@@ -53,15 +50,14 @@ namespace CaptainAmerica.App
         {
             var projectList = _oBLProyectoMiembro.GetAll().Where(c => c.Usuario.CodigoUsuario== WindowsIdentity.GetCurrent().Name.ToLower());
 
-            flpnlProjectList.Controls.Clear();
+            //flpnlProjectList.Controls.Clear();
                         
             foreach (var item in projectList)
             {
-                CtrlProjectCard _oCtrlProject = new CtrlProjectCard(item.Proyecto.NombreProyecto,
-                item.Proyecto.Cliente.NombreCliente, item.Proyecto.ProyectoCategoria.NombreCategoriaProyecto, 
-                item.Proyecto.FechaCreacion, 0, item.MiembroPermiso, this.MyParent);
-                _oCtrlProject.Tag = item.Proyecto;
-                flpnlProjectList.Controls.Add(_oCtrlProject);
+                //CtrlProjectCard _oCtrlProject = new CtrlProjectCard(item.Proyecto.NombreProyecto,
+                //item.Proyecto.Cliente.NombreCliente, item.Proyecto.ProyectoCategoria.NombreCategoriaProyecto, item.Proyecto.FechaCreacion, 0, item.MiembroPermiso);
+                //_oCtrlProject.Tag = item.Proyecto;
+                //flpnlProjectList.Controls.Add(_oCtrlProject);
             }
         }
 
@@ -82,5 +78,11 @@ namespace CaptainAmerica.App
             pnlMessage.Height = 0;
             lblMessage.Text = "El proyecto '{0}' se ha {1} correctamente.";
         }
+
+        private void textBox1_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

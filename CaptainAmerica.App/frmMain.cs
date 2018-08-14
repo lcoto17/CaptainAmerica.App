@@ -60,12 +60,16 @@ namespace CaptainAmerica.App
             else pnlVerticalMenu.Width = 63;
 
         }
-        private void pnlTop_MouseDown(object sender, MouseEventArgs e)
+        public void pnlTop_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
             btnRestore.Visible = false;
             btnMaximize.Visible = true;
+        }
+        public void fnDetailsProject()
+        {
+            fnInitializeChildForms(new frmProjectDetails());
         }
         #endregion
 
@@ -99,7 +103,7 @@ namespace CaptainAmerica.App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fnInitializeChildForms(new frmProjectList());
+            fnInitializeChildForms(new frmProjectList(this));
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -70,6 +70,12 @@
     <Compile Include="frmClientCreate.Designer.cs">
       <DependentUpon>frmClientCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectDetails.Designer.cs">
+      <DependentUpon>frmProjectDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProjectMembersCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientCreate.resx">
       <DependentUpon>frmClientCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectDetails.resx">
+      <DependentUpon>frmProjectDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProjectMembersCreate.resx">
       <DependentUpon>frmProjectMembersCreate.cs</DependentUpon>
@@ -246,6 +255,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_15.Pencil_290135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electricity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

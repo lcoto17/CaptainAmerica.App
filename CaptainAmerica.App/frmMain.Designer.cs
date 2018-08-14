@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlVerticalMenu = new System.Windows.Forms.Panel();
             this.btnUserDetail = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -36,13 +37,14 @@
             this.btnPrjectManagement = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMainContainer = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnRestore = new System.Windows.Forms.PictureBox();
             this.btnCollapse = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnMaximize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.pnlMainContainer = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.pnlVerticalMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTop.SuspendLayout();
@@ -52,6 +54,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pnlMainContainer);
+            this.panel1.Controls.Add(this.pnlTop);
+            this.panel1.Controls.Add(this.pnlVerticalMenu);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1596, 765);
+            this.panel1.TabIndex = 0;
             // 
             // pnlVerticalMenu
             // 
@@ -65,8 +79,8 @@
             this.pnlVerticalMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlVerticalMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlVerticalMenu.Name = "pnlVerticalMenu";
-            this.pnlVerticalMenu.Size = new System.Drawing.Size(63, 731);
-            this.pnlVerticalMenu.TabIndex = 0;
+            this.pnlVerticalMenu.Size = new System.Drawing.Size(63, 763);
+            this.pnlVerticalMenu.TabIndex = 3;
             // 
             // btnUserDetail
             // 
@@ -80,7 +94,7 @@
             this.btnUserDetail.ForeColor = System.Drawing.Color.White;
             this.btnUserDetail.Image = global::CaptainAmerica.App.Properties.Resources.if_user_male2_172626;
             this.btnUserDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUserDetail.Location = new System.Drawing.Point(0, 683);
+            this.btnUserDetail.Location = new System.Drawing.Point(0, 715);
             this.btnUserDetail.Name = "btnUserDetail";
             this.btnUserDetail.Size = new System.Drawing.Size(274, 48);
             this.btnUserDetail.TabIndex = 7;
@@ -162,6 +176,15 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlMainContainer
+            // 
+            this.pnlMainContainer.BackColor = System.Drawing.Color.White;
+            this.pnlMainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainContainer.Location = new System.Drawing.Point(63, 48);
+            this.pnlMainContainer.Name = "pnlMainContainer";
+            this.pnlMainContainer.Size = new System.Drawing.Size(1531, 715);
+            this.pnlMainContainer.TabIndex = 6;
+            // 
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -173,8 +196,8 @@
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(63, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(941, 48);
-            this.pnlTop.TabIndex = 1;
+            this.pnlTop.Size = new System.Drawing.Size(1531, 48);
+            this.pnlTop.TabIndex = 7;
             this.pnlTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseDown);
             // 
             // btnRestore
@@ -182,7 +205,7 @@
             this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestore.Image = global::CaptainAmerica.App.Properties.Resources.if_link_1954525;
-            this.btnRestore.Location = new System.Drawing.Point(884, 3);
+            this.btnRestore.Location = new System.Drawing.Point(1474, 3);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(24, 24);
             this.btnRestore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -208,7 +231,7 @@
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.Image = global::CaptainAmerica.App.Properties.Resources.if_minus_1954540;
-            this.btnMinimize.Location = new System.Drawing.Point(854, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(1444, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(24, 24);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -221,7 +244,7 @@
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximize.Image = global::CaptainAmerica.App.Properties.Resources.if_maximize_19545381;
-            this.btnMaximize.Location = new System.Drawing.Point(884, 3);
+            this.btnMaximize.Location = new System.Drawing.Point(1474, 3);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(24, 24);
             this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -234,7 +257,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Image = global::CaptainAmerica.App.Properties.Resources.if_cross_1894663;
-            this.btnClose.Location = new System.Drawing.Point(914, 3);
+            this.btnClose.Location = new System.Drawing.Point(1504, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 24);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -242,27 +265,17 @@
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pnlMainContainer
-            // 
-            this.pnlMainContainer.BackColor = System.Drawing.Color.White;
-            this.pnlMainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainContainer.Location = new System.Drawing.Point(63, 48);
-            this.pnlMainContainer.Name = "pnlMainContainer";
-            this.pnlMainContainer.Size = new System.Drawing.Size(941, 683);
-            this.pnlMainContainer.TabIndex = 2;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 731);
-            this.Controls.Add(this.pnlMainContainer);
-            this.Controls.Add(this.pnlTop);
-            this.Controls.Add(this.pnlVerticalMenu);
+            this.ClientSize = new System.Drawing.Size(1596, 765);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.panel1.ResumeLayout(false);
             this.pnlVerticalMenu.ResumeLayout(false);
             this.pnlVerticalMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -278,20 +291,21 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlVerticalMenu;
-        private System.Windows.Forms.PictureBox btnCollapse;
+        private System.Windows.Forms.Button btnUserDetail;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPrjectManagement;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlMainContainer;
         private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.PictureBox btnRestore;
+        private System.Windows.Forms.PictureBox btnCollapse;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnMaximize;
         private System.Windows.Forms.PictureBox btnClose;
-        private System.Windows.Forms.Panel pnlMainContainer;
-        private System.Windows.Forms.PictureBox btnRestore;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPrjectManagement;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnUserDetail;
     }
 }
 
