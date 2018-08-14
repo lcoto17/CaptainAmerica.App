@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CaptainAmerica.BL.Implementations;
 using CaptainAmerica.App.Controls;
 using CaptainAmerica.Model;
+using System.Security.Principal;
 
 namespace CaptainAmerica.App
 {
@@ -47,7 +48,7 @@ namespace CaptainAmerica.App
 
         public void fnLoadProjects()
         {
-            var projectList = _oBLProyectoMiembro.GetAll();
+            var projectList = _oBLProyectoMiembro.GetAll().Where(c => c.Usuario.CodigoUsuario== WindowsIdentity.GetCurrent().Name.ToLower());
 
             flpnlProjectList.Controls.Clear();
                         

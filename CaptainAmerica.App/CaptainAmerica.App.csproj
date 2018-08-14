@@ -70,6 +70,12 @@
     <Compile Include="frmClientCreate.Designer.cs">
       <DependentUpon>frmClientCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProjectMembersCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectMembersCreate.Designer.cs">
+      <DependentUpon>frmProjectMembersCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProjectCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientCreate.resx">
       <DependentUpon>frmClientCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectMembersCreate.resx">
+      <DependentUpon>frmProjectMembersCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProjectCreate.resx">
       <DependentUpon>frmProjectCreate.cs</DependentUpon>

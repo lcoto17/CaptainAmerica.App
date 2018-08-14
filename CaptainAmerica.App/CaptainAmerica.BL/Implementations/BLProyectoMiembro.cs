@@ -4,6 +4,7 @@ using CaptainAmerica.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,9 @@ namespace CaptainAmerica.BL.Implementations
             {
                 using (JJ_CPD dbContext = new JJ_CPD())
                 {
+                    var val = GetAll().Where(c => c.IdProyecto == oTemp.IdProyecto && c.IdUsuario == oTemp.IdUsuario).Count();
+                    if (val > 0) throw new Exception("El usuario ya es miembro del proyecto.");
+
                     dbContext.dbProyectoMiembro.Add(oTemp);
                     dbContext.SaveChanges();
                 }
@@ -31,7 +35,29 @@ namespace CaptainAmerica.BL.Implementations
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (JJ_CPD dbContext = new JJ_CPD())
+                {
+                    ProyectoMiembro Temp = new ProyectoMiembro();
+
+                    Temp = dbContext.dbProyectoMiembro.Where(c => c.IdProyectoMiembro == id).FirstOrDefault();
+
+                    if (Temp == null)
+                    {
+                        throw new Exception("El registro que intenta eliminar, no existe!");
+                    }
+                    else
+                    {
+                        dbContext.dbProyectoMiembro.Remove(Temp);
+                        dbContext.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void Edit(ProyectoMiembro oTemp)

@@ -31,19 +31,19 @@ namespace CaptainAmerica.App.Controls
             switch (permission)
             {
                 case "F":
-                    btnEdit.Enabled = true;
-                    btnDetails.Enabled = true;
-                    btnMembers.Enabled = true;
+                    btnEdit.Visible = true;
+                    btnDetails.Visible = true;
+                    btnMembers.Visible = true;
                     break;
                 case "R":
-                    btnEdit.Enabled = false;
-                    btnDetails.Enabled = true;
-                    btnMembers.Enabled = false;
+                    btnEdit.Visible = false;
+                    btnDetails.Visible = true;
+                    btnMembers.Visible = false;
                     break;
                 case "E":
-                    btnEdit.Enabled = true;
-                    btnDetails.Enabled = true;
-                    btnMembers.Enabled = false;
+                    btnEdit.Visible = true;
+                    btnDetails.Visible = true;
+                    btnMembers.Visible = false;
                     break;
                 default:
                     break;
@@ -71,6 +71,17 @@ namespace CaptainAmerica.App.Controls
                 imgMecanic.Visible = _oform.UpdatedProyecto.ProyectoCategoria.NombreCategoriaProyecto == "Mecánico";
             }
 
+        }
+
+        private void btnMembers_Click(object sender, EventArgs e)
+        {
+            frmProjectMembersCreate _oform = new frmProjectMembersCreate((Model.Proyecto)Tag);
+            var result = _oform.ShowDialog();
+
+            //Adding new project to UI with out refresh from database - Better performance
+            if (result == DialogResult.OK)
+            {
+            }
         }
     }
 }
