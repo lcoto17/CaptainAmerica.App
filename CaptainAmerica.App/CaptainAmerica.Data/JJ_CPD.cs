@@ -34,6 +34,7 @@ namespace CaptainAmerica.Data
         public virtual DbSet<ArchivoComentario> dbArchivoComentario { get; set; }
         public virtual DbSet<Usuario> dbUsuario { get; set; }
         public virtual DbSet<Rol> dbRol { get; set; }
+        public virtual DbSet<Parametro> dbParametro { get; set; }
     }
 
 }

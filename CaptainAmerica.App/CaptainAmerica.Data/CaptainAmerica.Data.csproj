@@ -66,6 +66,18 @@
     <Compile Include="Migrations\201808130301044_Version 1.0.0.2.Designer.cs">
       <DependentUpon>201808130301044_Version 1.0.0.2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808210220570_Fixing ProyectoArchivo and ArchivoComentario models.cs" />
+    <Compile Include="Migrations\201808210220570_Fixing ProyectoArchivo and ArchivoComentario models.Designer.cs">
+      <DependentUpon>201808210220570_Fixing ProyectoArchivo and ArchivoComentario models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808210317036_Adding Parametro model.cs" />
+    <Compile Include="Migrations\201808210317036_Adding Parametro model.Designer.cs">
+      <DependentUpon>201808210317036_Adding Parametro model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808210606593_Fixing ArchivoComentario model.cs" />
+    <Compile Include="Migrations\201808210606593_Fixing ArchivoComentario model.Designer.cs">
+      <DependentUpon>201808210606593_Fixing ArchivoComentario model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,6 +105,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808130301044_Version 1.0.0.2.resx">
       <DependentUpon>201808130301044_Version 1.0.0.2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808210220570_Fixing ProyectoArchivo and ArchivoComentario models.resx">
+      <DependentUpon>201808210220570_Fixing ProyectoArchivo and ArchivoComentario models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808210317036_Adding Parametro model.resx">
+      <DependentUpon>201808210317036_Adding Parametro model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808210606593_Fixing ArchivoComentario model.resx">
+      <DependentUpon>201808210606593_Fixing ArchivoComentario model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

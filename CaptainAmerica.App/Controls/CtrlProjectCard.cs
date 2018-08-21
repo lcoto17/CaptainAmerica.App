@@ -89,7 +89,7 @@ namespace CaptainAmerica.App.Controls
 
         private void btnDetails_Click_1(object sender, EventArgs e)
         {
-            this.MyGrandFather.fnDetailsProject();
+            this.MyGrandFather.fnDetailsProject(this.Tag);
         }
     }
 }

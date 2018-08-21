@@ -67,9 +67,9 @@ namespace CaptainAmerica.App
             btnRestore.Visible = false;
             btnMaximize.Visible = true;
         }
-        public void fnDetailsProject()
+        public void fnDetailsProject(object proyecto)
         {
-            fnInitializeChildForms(new frmProjectDetails());
+            fnInitializeChildForms(new frmProjectDetails((Proyecto)proyecto));
         }
         #endregion
 

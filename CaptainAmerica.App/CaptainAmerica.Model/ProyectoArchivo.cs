@@ -17,7 +17,9 @@ namespace CaptainAmerica.Model
         [StringLength(255)]
         public string URLGuardado { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public int IdProyecto { get; set; }
 
+        [ForeignKey("IdProyecto")]
         public Proyecto Proyecto { get; set; }
     }
 }

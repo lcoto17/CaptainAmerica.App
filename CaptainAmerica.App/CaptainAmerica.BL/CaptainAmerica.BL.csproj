@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Implementations\BLCategoriaProyecto.cs" />
     <Compile Include="Implementations\BLCliente.cs" />
+    <Compile Include="Implementations\BLArchivoComentario.cs" />
+    <Compile Include="Implementations\BLProyectoArchivo.cs" />
+    <Compile Include="Implementations\BLParametro.cs" />
     <Compile Include="Implementations\BLUsuario.cs" />
     <Compile Include="Implementations\BLProyectoMiembro.cs" />
     <Compile Include="Implementations\BLProyecto.cs" />
